@@ -4,16 +4,16 @@ import { Redirect, router } from "expo-router";
 
 const index = () => {
   return (
-    <View>
+    <View className="bg-white">
       <Text>index</Text>
       <TouchableOpacity
         onPress={() => {
-          router.push("/signin");
+          router.push("/location");
         }}
         activeOpacity={0.8}
       >
         
-        <Text className="text-xl ">Click me</Text>
+        <Text className="text-xl mt-20">Click me</Text>
       </TouchableOpacity>
     </View>
   );

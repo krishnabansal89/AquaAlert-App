@@ -32,7 +32,7 @@ const login = () => {
           </Text>
         </View>
         <View className="space-y-3 w-[90%] m-auto ">
-          <View className="bg-[#EEF4FF]  w-[321.517px]  border-[0.842px] border-[#28286026]  rounded-[6.733px] px-4 h-14">
+          <View className="bg-[#EEF4FF]   border-[0.842px] border-[#28286026]  rounded-[6.733px] px-4 h-14">
             <Input
               // placeholderTextColor={"#282860"}
               leftIcon={<Icon name="user" size={24} color="#282860" />}
@@ -52,7 +52,7 @@ const login = () => {
               inputStyle={{ height: 20 }}
             />
           </View>
-          <View className="bg-[#EEF4FF]  w-[321.517px]  border-[0.842px] border-[#28286026]  rounded-[6.733px] px-4 h-14">
+          <View className="bg-[#EEF4FF]  border-[0.842px] border-[#28286026]  rounded-[6.733px] px-4 h-14">
             <Input
               // placeholderTextColor={"#282860"}
               leftIcon={<Icon name="lock" size={24} color="#282860" />}
