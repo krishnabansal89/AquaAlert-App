@@ -57,7 +57,7 @@ const Outdoor = () => {
         activeOpacity={0.8}
         className="h-[50px] rounded-[6.733px] justify-center"
         onPress={() => {
-          router.push("/indoor");
+          router.push("/Home");
         }}
       >
         <Text className="text-[#001639] text-center text-[12px] font-[600] justify-center font-[Lexend]">
