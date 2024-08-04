@@ -22,10 +22,10 @@ const HomeLayout = () => {
       screenOptions={{
         headerShown: false,
       }}
-      className="bg-white flex-1"
+      className="bg-white flex-1 h-full "
     >
       {/* <Stack.Screen name="(auth)" options={{ headerShown: false }} /> */}
-      <Stack.Screen name="(info)" options={{ headerShown: false }} />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="index" options={{ headerShown: false }} />
     </Stack>
   );

@@ -8,7 +8,7 @@ const index = () => {
       <Text>index</Text>
       <TouchableOpacity
         onPress={() => {
-          router.push("/location");
+          router.push("/home");
         }}
         activeOpacity={0.8}
       >

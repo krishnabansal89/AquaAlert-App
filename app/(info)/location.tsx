@@ -13,7 +13,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 const location = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="h-[100%] bg-white">
       <View className=" flex space-y-10 justify-center px- pt-20 bg-[#FFF] font-[Lexend]">
         <View className="text-[#001639] items-center">
           <Text className="text-[23.567px] text-[#001639] font-[600] font-[Lexend]">

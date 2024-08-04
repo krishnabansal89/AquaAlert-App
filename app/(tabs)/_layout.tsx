@@ -1,9 +1,11 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
+import TabIcon from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { icons } from '@/assets/images/ImageHandler';
+// import {splash} from '@/assets/images/splash.png'
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -11,27 +13,99 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: "#FAA719",
+        tabBarInactiveTintColor: "#001639",
         headerShown: false,
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          height: 60,
+          borderTopStartRadius: 20,
+          borderTopEndRadius: 20,
+        },
       }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
-          ),
-        }}
+    
+        <Tabs.Screen
+          name="Home"
+          options={{
+            title: "Home",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.home}
+                color={color}
+                name="Home"
+                focused={focused}
+                main={false}
+              />
+            ),
+          }}
       />
       <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
-          ),
-        }}
+          name="Activities"
+          options={{
+            title: "Activity",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.activity}
+                color={color}
+                name="Activity"
+                focused={focused}
+                main = {false}
+              />
+            ),
+          }}
+      />
+      
+      <Tabs.Screen
+          name="Nemo"
+          options={{
+            title: "Nemo",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.nemo}
+                color={color}
+                name="Nemo"
+                focused={focused}
+                main = {true}
+              />
+            ),
+          }}
+      />
+      <Tabs.Screen
+          name="History"
+          options={{
+            title: "History",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.histort}
+                color={color}
+                name="History"
+                focused={focused}
+                main = {false}
+              />
+            ),
+          }}
+      />
+       <Tabs.Screen
+          name="Profile"
+          options={{
+            title: "Profile",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.profile}
+                color={color}
+                name="Profile"
+                focused={focused}
+                main = {false}
+              />
+            ),
+          }}
       />
     </Tabs>
+    
   );
 }
