@@ -23,10 +23,12 @@ const HomeLayout = () => {
         headerShown: false,
       }}
       className="bg-white flex-1 h-full "
+      initialRouteName="login"
     >
       <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+      <Stack.Screen name="(info)" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      <Stack.Screen name="index" options={{ headerShown: false }} />
+      {/* <Stack.Screen name="index" options={{ headerShown: false }} /> */}
     </Stack>
   );
 };

@@ -1,11 +1,13 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import React, { useEffect } from "react";
+import React, { useEffect , useState } from "react";
 import { Redirect, router } from "expo-router";
 
 const index = () => {
+  const [redirect, setRedirect] = useState(false);
   useEffect(() => {
-    router.push("/login");
-  }, []);
+    // if(redirect==false) router.push("/login");
+    setRedirect(true);
+  }, [redirect]);
   return (
     <View className="bg-white">
       <Text>index</Text>
@@ -15,7 +17,7 @@ const index = () => {
         }}
         activeOpacity={0.8}
       >
-        
+        <Redirect href={"/login"} />
         <Text className="text-xl mt-20">Click me</Text>
       </TouchableOpacity>
     </View>

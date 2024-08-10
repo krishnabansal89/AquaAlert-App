@@ -4,11 +4,11 @@
     "slug": "AquaAlert",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icons/nemo.png",
+    "icon": "./assets/images/icons/nemo.png",
     "scheme": "aquaalert",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/icons/nemo.png",
+      "image": "./assets/images/icons/nemo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,20 +17,35 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icons/nemo.png",
+        "foregroundImage": "./assets/images/icons/nemo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.krishna_bansal.AquaAlert"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/icons/nemo.png"
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "05deca66-f0a2-4290-84fa-62fbf740deb6"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/05deca66-f0a2-4290-84fa-62fbf740deb6"
     }
   }
 }
